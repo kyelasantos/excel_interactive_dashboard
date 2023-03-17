@@ -22,13 +22,38 @@ main {
   margin: 0 auto;
   text-align: center;
 }
-
+main h2 {
+  font: Arial Bold;
+  font-size: xx-large;
+  text-align: left;
+}
+main h3 {
+  font: Arial Bold;
+  font-size: xx-large;
+  text-align: left;
+}
 
 section p {
   font-size: 20px;
-  line-height: 1.5;
-}
+  line-height: 1.5;}
+
+
 div {text-align: center;}
+
+.container {
+  position: relative;
+  display: flex;
+  text-align: center;
+  width: 1200px;
+}
+
+.text {
+  font-size: x-large;
+  font: sans-serif;
+  line-height: 1.5;
+  text-align: left;
+}
+
 
 /* Style the footer */
 footer {
@@ -49,12 +74,54 @@ footer {
       <p>Data downloaded from: <a href="https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-jewelry-store" target= "_blank">KAGGLE</a></p>
 				<div>
                     <center>
-                      <iframe width="1300" height="1000" src="https://tipedu-my.sharepoint.com/:x:/g/personal/qkysantos_tip_edu_ph/EfFIWfEGfvpFnBDbECkiy0wBnGTaSE-I-TN4tXY8mKevow?sourcedoc={f15948f1-7e06-45fa-9c10-db102922cb4c}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&wdAllowInteractivity=True&wdbipreview=True&edesNext=false&resen=true&ed1JS=false"></iframe>
+                      <iframe width="1300" height="1000" src="https://tipedu-my.sharepoint.com/:x:/g/personal/qkysantos_tip_edu_ph/EfFIWfEGfvpFnBDbECkiy0wBnGTaSE-I-TN4tXY8mKevow?sourcedoc={f15948f1-7e06-45fa-9c10-db102922cb4c}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False&wdInConfigurator=True&wdInConfigurator=True&wdAllowInteractivity=True&wdbipreview=True&edesNext=false&resen=true&ed1JS=false"></iframe>
                     </center>
-				</div>
-                <p>Insert some text here to describe your projects.</p>
+				</div>             
 		</section>
+    <h2><br>About</h2>
+    <div class="container">
+                <p class="text">This is purchase-data from December 2018 to December 2021 (3 years) of a medium sized jewelry online store.<br></br>The goal of this dashboard is to help stakeholders to quickly and easily understand how well the business is performing, identify areas that require attention and improve organizational performance by providing timely and relevant information that identify areas of improvement, make informed decisions, and to take action to drive positive outcomes. </p>           
+    </div>
+    <h2>
+      Methodology<br>
+    </h2>
+    <div class="container">
+    <p class="text">I started this project by defining the purpose of my analysis, which was to understand the sales performance of an online jewelry store. To achieve this, I cleaned the data using Excel, removing any duplicates or irrelevant data points and checking for missing data. I used DAX formulas to create new columns and measures, such as summing sales by month or calculating average order values.
+      <br><br>I built a performance dashboard for the online jewelry store using PowerPivot and Excel charts to visually represent the data. This dashboard allowed me to explore the data, look for patterns and insights that could help me understand the business sales performance.
+      </class>
+    </div>
+    <h2>Analysis<br></h2>
+    <div class="container">
+    <p class="text">• The total sales for the three-year period are $31,995,025.52, with 2021 being the highest-grossing year at $18,887,791.40. <br> • There is a clear trend of steady growth in sales over the three years, with each year having higher sales figures than the previous year. <br> • The months of November and December are the highest-grossing months in each year, with December 2020 being the highest-grossing month overall at $2,236,394.06. <br> • The month with the lowest sales figures in each year is April 2020, with only $161,454.11 in sales. <br> • The summer months of June, July, and August in 2020 and 2021 show significant growth compared to the same months in 2019, with August 2021 being the highest-grossing month in the entire three-year period at $2,730,206.44 in sales. <br> • The year 2020 shows a dip in sales in April and May, likely due to the impact of the COVID-19 pandemic on consumer behavior and the economy.
+      • The grand total for all three years is 87,968 products sold. <br>• Jewelry items are the most popular category, with 7 out of the 10 categories being jewelry items. <br>• The category with the highest number of products sold is jewelry earring, with 29,006 products sold over the three-year period. <br>• The category with the lowest number of products sold is jewelry stud, with only 12 products sold over the three-year period. <br>• The electronics clocks category shows steady growth over the three years, with 42 products sold in 2019, 30 in 2020, and 90 in 2021. <br>• The jewelry pendant, jewelry ring, and jewelry earring categories show significant growth over the three years, with the number of products sold more than doubling for each category. <br>• The others category, which likely includes a variety of non-jewelry items, shows significant growth as well, with 9,829 products sold in 2019, 2,878 in 2020, and 6,004 in 2021.
+      <br>•  The online store's total average order value is 364. The average order value for existing customers is 368, which is slightly higher than the overall average. The average order value for new customers is 300, which is significantly lower than the overall average.
+      <br>•	The online store sold a total of 11,530 SKUs in 2019, which increased to 26,115 SKUs in 2020, and further increased to 50,323 SKUs in 2021.<br>•	The grand total of SKUs sold over the three-year period is 87,968.
+      <br>•	The data indicates that the online store is expanding its product offerings each year by adding new SKUs. This expansion could be a result of a growing customer base, new suppliers, or an effort to diversify their product portfolio.
+      <br>•	The rapid increase in the number of SKUs sold over the years suggests that the online store is actively trying to meet the needs and preferences of their customers by providing them with a wide range of options to choose from. <br>
+    </class>
+    </div>
+    <h2>Conclusion<br></h2>
+    <div class="container">
+    <p class="text">
+      The Average Order Value suggests that the store is doing a better job of upselling or cross-selling to its existing customers, as they have a higher average order value. On the other hand, the average order value for new customers is much lower, which could indicate that the store needs to do a better job of converting new visitors into paying customers or encouraging them to make larger purchases. <br>
+      <br>Sales figures show consistent growth over the three-year period, with the store performing particularly well in the latter half of 2020 and throughout 2021. However, it will be important for the store to continue monitoring sales trends and adjusting strategies as needed to maintain growth trajectory. <br>
+      <br>Units sold per Category suggest that the online store's customers have a particular interest in jewelry items, especially earrings, rings, and pendants. The store may want to consider increasing their inventory in these categories and potentially expanding into related categories, such as jewelry sets or hair accessories. Additionally, the growth in the others category may indicate an opportunity to diversify their offerings and cater to a wider range of interests. <br>
+      <br>The increase in the number of units sold over the three-year period suggests that the online store is growing and expanding its product offerings. However, it's important for the store to ensure that the new SKUs they are adding align with their customers' preferences to ensure long-term success. <br>
+    </p>
+  </div>
+  <h2>Recommendation<br></h2>
+  <div class="container">
+    <p class="text">
+      I suggest that the store segment their customers. Customer Segmentation is a marketing strategy that involves dividing customers into groups based on shared characteristics, such as demographics, behavior, or needs. By segmenting the customers, marketing messages and strategies can be tailor-fitted to better meet the needs and preferences of each group. <br><br>
+      1.	New vs. Existing Customers: The online store could segment customers based on whether they are new or returning customers. This could help the store tailor their marketing strategies to each group. For example, the store may want to offer new customers a discount or promotion to encourage them to make their first purchase, while offering existing customers incentives to make repeat purchases. <br><br>
+      2.	Jewelry vs. Non-Jewelry Customers: Given that jewelry items are the most popular category in the store, the store could segment customers based on whether they have purchased jewelry items in the past or not. This could help the store tailor their marketing messages and product recommendations to each group. <br><br>
+      3.	High-Value vs. Low-Value Customers: The store could segment customers based on their average order value or lifetime value. This could help the store identify their most valuable customers and tailor their marketing strategies to retain them, while also encouraging low-value customers to make larger purchases. <br><br>
+      4.	Seasonal Shoppers: Based on the sales figures provided, it's clear that the store experiences a significant uptick in sales during the holiday season. The store could segment customers based on their shopping behavior during this time of year and tailor their marketing strategies accordingly. <br><br>
+      5.	Demographic Segmentation: The store could also segment customers based on demographic factors such as age, gender, or location. This could help the store tailor their marketing messages and product offerings to specific groups of customers. <br><br>
+      Ultimately, the specific customer segmentation strategy the store chooses will depend on their specific goals and target market. It may be beneficial for the store to experiment with different segmentation strategies and evaluate their effectiveness over time.
 
+    </p>
+  </div>
 	</main>
 	<footer>
 		<p>&copy; 2023 kyelaysantos</p>
